@@ -1,4 +1,4 @@
-__author__ = 'cameron'
+__author__ = 'camzzz'
 
 from BaseStrategy import BaseStrategy
 

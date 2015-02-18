@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8726f54b-1dad-4f12-b1bf-b6c0a9faf36e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Strategies/RandomStrategy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Strategies/StaticStrategy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Strategies/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseStrategy.py" afterPath="$PROJECT_DIR$/BaseStrategy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameManager.py" afterPath="$PROJECT_DIR$/GameManager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Strategies/RandomStrategy.py" afterPath="$PROJECT_DIR$/Strategies/RandomStrategy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Strategies/StaticStrategy.py" afterPath="$PROJECT_DIR$/Strategies/StaticStrategy.py" />
     </list>
     <ignored path="Blotto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,24 +46,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomStrategy.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RandomStrategy.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Strategies/RandomStrategy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <marker date="1424295729690" expanded="true" signature="99:108" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StaticStrategy.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StaticStrategy.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Strategies/StaticStrategy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.037775446" vertical-offset="0" max-vertical-offset="953">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <folding>
+                <element signature="e#23#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,10 +91,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Strategies/RandomStrategy.py" />
         <option value="$PROJECT_DIR$/GameManager.py" />
         <option value="$PROJECT_DIR$/BaseStrategy.py" />
         <option value="$PROJECT_DIR$/Strategies/StaticStrategy.py" />
+        <option value="$PROJECT_DIR$/Strategies/RandomStrategy.py" />
       </list>
     </option>
   </component>
@@ -371,16 +368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Strategies/RandomStrategy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1424295729690" expanded="true" signature="99:108" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1494">
@@ -399,8 +386,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Strategies/StaticStrategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037775446" vertical-offset="0" max-vertical-offset="953">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strategies/RandomStrategy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -1,4 +1,4 @@
-__author__ = 'cameron'
+__author__ = 'camzzz'
 
 import random
 import copy
