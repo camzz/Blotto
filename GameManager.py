@@ -4,13 +4,11 @@ from general_utils import sign
 
 
 class GameManager(object):
-    def __init__(self, stategy_A, strategy_B, field_weightings, num_runs, total_score=True):
+    def __init__(self, stategy_A, strategy_B, num_fields, num_runs, total_score=True):
         self.strategy_A = stategy_A
         self.strategy_B = strategy_B
 
-        self.field_weightings = field_weightings
-        self.num_fields = len(self.field_weightings)
-
+        self.num_fields = num_fields
         self.num_runs = num_runs
 
         #Use the total score over many games, or number of individual games won, regardless of score
@@ -22,10 +20,10 @@ class GameManager(object):
     def run(self):
         #initialise strategies
         self.strategy_A.initialise(opponent=self.strategy_B.name,
-                                   field_weightings=self.field_weightings,
+                                   num_fields=self.num_fields,
                                    num_runs=self.num_runs)
         self.strategy_B.initialise(opponent=self.strategy_A.name,
-                                   field_weightings=self.field_weightings,
+                                   num_fields=self.num_fields,
                                    num_runs=self.num_runs)
 
         for i in xrange(self.num_runs):
@@ -64,18 +62,15 @@ class GameManager(object):
 
     def resolve_battle(self, soldiers_A, soldiers_B, check_A, check_B):
         if check_A and not check_B:
-            return sum(self.field_weightings)
+            return self.num_fields
         if check_B and not check_A:
-            return -sum(self.field_weightings)
+            return -self.num_fields
         if not check_B and not check_A:
             return 0
 
         score = 0
-        for i, weighting in enumerate(self.field_weightings):
-            sA = soldiers_A[i]
-            sB = soldiers_B[i]
-
-            score += weighting * sign(sA - sB)
+        for i in xrange(self.num_fields):
+            score += sign(soldiers_A[i] - soldiers_B[i])
 
         if self.total_score:
             return score
