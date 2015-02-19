@@ -1,1 +1,6 @@
-__author__ = 'cameron'
+__author__ = 'camzzz'
+
+from RandomStrategy import RandomStrategy
+from StaticStrategy import StaticStrategy
+
+__all__ = ['RandomStrategy', 'StaticStrategy']

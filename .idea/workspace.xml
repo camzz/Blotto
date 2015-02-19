@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8726f54b-1dad-4f12-b1bf-b6c0a9faf36e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StrategyUtils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StrategyUtils/random_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Blotto.iml" afterPath="$PROJECT_DIR$/.idea/Blotto.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Strategies/RandomStrategy.py" afterPath="$PROJECT_DIR$/Strategies/RandomStrategy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Strategies/StaticStrategy.py" afterPath="$PROJECT_DIR$/Strategies/StaticStrategy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Strategies/__init__.py" afterPath="$PROJECT_DIR$/Strategies/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Blotto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +45,20 @@
       <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Strategies/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <folding>
+                <element signature="e#23#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+              <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -49,8 +67,40 @@
       <file leaf-file-name="RandomStrategy.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Strategies/RandomStrategy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
-              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.27155173" vertical-offset="0" max-vertical-offset="928">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="e#23#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general_utils.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/general_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exceptions.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exceptions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_utils.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StrategyUtils/random_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/Strategies/StaticStrategy.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding>
                 <element signature="e#23#36#0" expanded="true" />
               </folding>
@@ -71,8 +121,8 @@
       <file leaf-file-name="GameManager.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1494">
-              <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1494">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -94,7 +144,11 @@
         <option value="$PROJECT_DIR$/GameManager.py" />
         <option value="$PROJECT_DIR$/BaseStrategy.py" />
         <option value="$PROJECT_DIR$/Strategies/StaticStrategy.py" />
+        <option value="$PROJECT_DIR$/Strategies/__init__.py" />
+        <option value="$PROJECT_DIR$/exceptions.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/Strategies/RandomStrategy.py" />
+        <option value="$PROJECT_DIR$/StrategyUtils/random_utils.py" />
       </list>
     </option>
   </component>
@@ -146,6 +200,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Blotto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blotto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blotto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StrategyUtils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,17 +430,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Strategies/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1494">
-          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding>
+            <element signature="e#23#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -384,21 +446,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/general_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1494">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Strategies/StaticStrategy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding>
             <element signature="e#23#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StrategyUtils/random_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Strategies/RandomStrategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.27155173" vertical-offset="0" max-vertical-offset="928">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
