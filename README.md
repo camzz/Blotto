@@ -7,3 +7,9 @@ Please push anything you work on!
 
 On the night we will start by battling 100 soldiers, across 8 fields, and 10,000 runs.
 The winner will be the one that wins the most fields over all 10,000 runs, i.e. a max score of 80,000.
+
+
+Uses:
+python2.7
+matplotlib (sudo apt-get install python-matplotlib or equivalent)
+progressbar (sudo pip install progressbar or equivalent)
