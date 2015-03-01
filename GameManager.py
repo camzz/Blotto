@@ -42,8 +42,8 @@ class GameManager(object):
         score = self.resolve_battle(soldiers_A, soldiers_B, check_A, check_B)
 
         #Infom strategies
-        self.strategy_A.post_results(score, soldiers_B, check_A, check_B)
-        self.strategy_B.post_results(-score, soldiers_A, check_B, check_A)
+        self.strategy_A.post_results(score, soldiers_B, check_B)
+        self.strategy_B.post_results(-score, soldiers_A, check_A)
 
         self.results.append(score)
 
@@ -103,3 +103,15 @@ class GameManager(object):
         else:
             print "The game was a tie!"
         plt.show()
+
+    def check_strategy_A_win(self):
+        if sum(self.results) > 0:
+            return True
+        else:
+            return False
+
+    def check_strategy_B_win(self):
+        if sum(self.results) < 0:
+            return True
+        else:
+            return False

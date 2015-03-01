@@ -1,7 +1,6 @@
 __author__ = 'camzzz'
 
 import random
-import copy
 
 from BaseStrategy import BaseStrategy
 
@@ -17,6 +16,9 @@ class StaticStrategy(BaseStrategy):
         self.shuffle = shuffle
 
         self.static_strategy = None
+
+    def __repr__(self):
+        return "StaticStrategy: %s, shuffle:%s" % (self.static_soldiers_map, self.shuffle)
 
     def initialise(self, num_fields, num_runs):
         super(StaticStrategy, self).initialise(num_fields, num_runs)

@@ -13,6 +13,7 @@ def random_allocation(weightings, number=100):
 
 
 def weighted_draw(weightings):
+    assert sum(weightings) == 1
     r = random.random()
     for i, w in enumerate(weightings):
         if r <= w:
