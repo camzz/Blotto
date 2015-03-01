@@ -14,7 +14,7 @@ def main():
     strategies = []
     for s in static_strat_list:
         strategies.append(StaticStrategy('static_%s_1' % s, s, True))
-        
+
     sr = StrategyRanker(strategies, num_fields=3, num_runs=1, total_score=True)
     sr.run()
 
