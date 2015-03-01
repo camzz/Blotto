@@ -9,6 +9,8 @@ def random_allocation(weightings, number=100):
     for _ in xrange(number):
         result[weighted_draw(weightings)] += 1
 
+    return result
+
 
 def weighted_draw(weightings):
     r = random.random()

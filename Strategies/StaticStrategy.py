@@ -7,8 +7,8 @@ from BaseStrategy import BaseStrategy
 
 
 class StaticStrategy(BaseStrategy):
-    def __init__(self, static_soldiers, shuffle=False):
-        super(StaticStrategy, self).__init__()
+    def __init__(self, name, static_soldiers, shuffle=False):
+        super(StaticStrategy, self).__init__(name)
         if isinstance(static_soldiers, dict):
             self.static_soldiers_map = static_soldiers
         else:
@@ -18,12 +18,12 @@ class StaticStrategy(BaseStrategy):
 
         self.static_strategy = None
 
-    def initialise(self, opponent_name, num_fields, num_runs):
-        super(StaticStrategy, self).initialise(opponent_name, num_fields, num_runs)
+    def initialise(self, num_fields, num_runs):
+        super(StaticStrategy, self).initialise(num_fields, num_runs)
         self.static_strategy = self.static_soldiers_map[num_fields]
 
     def soldiers_request(self, iteration):
         if self.shuffle:
-            return random.shuffle(copy.copy(self.static_strategy))
+            return sorted(self.static_strategy, key=lambda k: random.random())
         else:
             return self.static_strategy

@@ -1,6 +1,7 @@
 __author__ = 'camzzz'
 
-from general_utils import sign
+import matplotlib.pyplot as plt
+from general_utils import sign, cumulative_sum
 
 
 class GameManager(object):
@@ -19,11 +20,9 @@ class GameManager(object):
 
     def run(self):
         #initialise strategies
-        self.strategy_A.initialise(opponent=self.strategy_B.name,
-                                   num_fields=self.num_fields,
+        self.strategy_A.initialise(num_fields=self.num_fields,
                                    num_runs=self.num_runs)
-        self.strategy_B.initialise(opponent=self.strategy_A.name,
-                                   num_fields=self.num_fields,
+        self.strategy_B.initialise(num_fields=self.num_fields,
                                    num_runs=self.num_runs)
 
         for i in xrange(self.num_runs):
@@ -76,3 +75,31 @@ class GameManager(object):
             return score
         else:
             return sign(score)
+
+    def plot_results(self):
+        data = list(cumulative_sum(self.results))
+        plt.plot(data)
+        plt.ylabel('A - B points')
+        plt.show(block=False)
+
+    def get_max_score(self):
+        if self.total_score:
+            return self.num_runs * self.num_fields
+        else:
+            return self.num_runs
+
+    def declare_winner(self):
+        s = sum(self.results)
+        if s > 0:
+            print "%s is the winner by %s points!" % (self.strategy_A.name, s)
+            print "Max possible points: %s" % self.get_max_score()
+            print "Percentage of highest score: %.2f%%" % (100 * s / self.get_max_score())
+
+        elif s < 0:
+            print "%s is the winner by %s points!" % (self.strategy_B.name, -s)
+            print "Max possible points: %s" % self.get_max_score()
+            print "Percentage of highest score: %.2f%%" % (100 * -s / self.get_max_score())
+
+        else:
+            print "The game was a tie!"
+        plt.show()

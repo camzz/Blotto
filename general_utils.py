@@ -11,3 +11,14 @@ except ImportError:
             return 0
         else:
             return -1
+
+
+class UsageError(Exception):
+    pass
+
+
+def cumulative_sum(itr):
+    total = 0
+    for v in itr:
+        total += v
+        yield total
