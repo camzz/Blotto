@@ -1,7 +1,8 @@
 __author__ = 'camzzz'
 
 from BaseStrategy import BaseStrategy
-from StrategyUtils.assorted_utils import counter_allocation, random_draw_allocation
+from StrategyUtils.assorted_utils import counter_allocation
+from StrategyUtils.random_utils import random_draw_allocation
 
 
 class CounterStrategy(BaseStrategy):
