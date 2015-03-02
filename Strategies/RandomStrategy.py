@@ -4,7 +4,7 @@ import random
 
 from BaseStrategy import BaseStrategy
 from general_utils import UsageError
-from StrategyUtils.random_utils import random_allocation
+from StrategyUtils.assorted_utils import random_allocation
 
 
 class RandomStrategy(BaseStrategy):

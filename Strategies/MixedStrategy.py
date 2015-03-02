@@ -1,6 +1,6 @@
 __author__ = 'camzzz'
 
-from StrategyUtils.random_utils import weighted_draw
+from StrategyUtils.assorted_utils import weighted_draw
 
 from BaseStrategy import BaseStrategy
 

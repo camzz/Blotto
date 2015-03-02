@@ -3,6 +3,7 @@ __author__ = 'camzzz'
 import progressbar
 from GameManager import GameManager
 
+
 class StrategyRanker(object):
     def __init__(self, strategies, num_fields, num_runs, total_score=True):
         self.num_fields = num_fields
