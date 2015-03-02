@@ -1,7 +1,7 @@
 __author__ = 'camzzz'
 
 from BaseStrategy import BaseStrategy
-from StrategyUtils.assorted_utils import counter_allocation, random_allocation
+from StrategyUtils.assorted_utils import counter_allocation, random_draw_allocation
 
 
 class CounterStrategy(BaseStrategy):
@@ -18,7 +18,7 @@ class CounterStrategy(BaseStrategy):
 
     def soldiers_request(self, iteration):
         if not self.ready:
-            return random_allocation([1.0 / self.num_fields for _ in xrange(self.num_fields)])
+            return random_draw_allocation([1.0 / self.num_fields for _ in xrange(self.num_fields)])
 
         else:
             alloc = self.opponent_allocations[-1]

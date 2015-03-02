@@ -4,7 +4,7 @@ import random
 
 from BaseStrategy import BaseStrategy
 from general_utils import UsageError
-from StrategyUtils.assorted_utils import random_allocation
+from StrategyUtils.assorted_utils import random_draw_allocation
 
 
 class RandomStrategy(BaseStrategy):
@@ -27,7 +27,7 @@ class RandomStrategy(BaseStrategy):
             raise UsageError("Weightings must add to 1: %s" % self.weightings)
 
     def soldiers_request(self, iteration):
-        strategy = random_allocation(weightings=self.weightings)
+        strategy = random_draw_allocation(weightings=self.weightings)
 
         if self.shuffle:
             return sorted(strategy, key=lambda k: random.random())
