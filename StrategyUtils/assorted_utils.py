@@ -2,14 +2,36 @@ __author__ = 'camzzz'
 
 import random
 
+from general_utils import USageError
 
-def random_allocation(weightings, number=100):
-    result = [0.0 for _ in weightings]
 
-    for _ in xrange(number):
-        result[weighted_draw(weightings)] += 1
+def random_allocation(weightings, number=100, allocation_type=0):
+    if allocation_type == 0:
+        result = [0.0 for _ in weightings]
 
-    return result
+        for _ in xrange(number):
+            result[weighted_draw(weightings)] += 1
+
+        return result
+    
+    #Not checked 
+    elif allocation_type == 1:
+        result = []
+        for w in weightings:
+            result.append(random.random() * w)
+        
+        result = [int(100 * r / sum(result)) for r in result]
+        while sum_result != 100:
+            if sum_result > 100:
+                result[weighted_draw(weightings)] -= 1
+            else:
+                result[weighted_draw(weightings)] += 1
+        return result
+    
+    #Some more involved distributions to come
+    
+    else:
+        raise UsageError("allocation_type not recognised: %s" % allocation_type)
 
 
 def weighted_draw(weightings):
