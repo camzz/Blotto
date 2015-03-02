@@ -10,6 +10,7 @@ The winner will be the one that wins the most fields over all 10,000 runs, i.e. 
 
 
 Uses:
-python2.7
-matplotlib (sudo apt-get install python-matplotlib or equivalent)
-progressbar (sudo pip install progressbar or equivalent)
+
+ - python2.7
+ - matplotlib (sudo apt-get install python-matplotlib or equivalent)
+ - progressbar (sudo pip install progressbar or equivalent)
