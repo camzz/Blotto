@@ -2,6 +2,7 @@ __author__ = 'camzzz'
 
 
 class BaseStrategy(object):
+    """Base class for Blotto strategies"""
     def __init__(self, name):
         self.name = name
         self.num_fields = None
@@ -14,17 +15,31 @@ class BaseStrategy(object):
         return "%s:%s" % (self.__class__.__name__, self.name)
 
     def initialise(self, num_fields, num_runs):
+        """Called before the battle starts"""
         self.num_fields = num_fields
         self.num_runs = num_runs
         self.wipe_history()
 
     def soldiers_request(self, iteration):
+        """
+        This method will be called each turn to ask for you allocation of soldiers
+        return a list of positive integers with sum less than or equal to 100
+        """
         pass
 
     def post_results(self, score, soldiers_B, check_B):
+        """
+        This method will be called after each individual game is resolved.
+        It tells you the score (positive you won, negative you lost)
+        It tells you what the opponents soldiers allocation was
+        It tells you if the opponents allocation was deemed valid
+        """
         self.past_scores.append(score)
         self.opponent_allocations.append(soldiers_B)
 
     def wipe_history(self):
+        """
+        Wipe history so we can take on a new opponent with fresh memory
+        """
         self.opponent_allocations = []
         self.past_scores = []
