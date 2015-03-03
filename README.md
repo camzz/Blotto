@@ -8,8 +8,8 @@ To get started, copy SimpleStrategy and rename it to your own strategy name in t
 The basic task is to implement soldiers_request which is where you decide your move on each turn.
 
 On the night we will start by battling 100 soldiers, across 8 fields, and 10,000 runs.
-The winner will be the one that wins the most fields over all 10,000 runs, i.e. a max score of 80,000.
-People might mess arund with other setups afterwards. Suggestions of weighted field values or more/less soldiers/fields
+The winner will be the one that wins the most games over all 10,000 runs, i.e. a max score of 10,000.
+People might mess around with other setups afterwards. Suggestions of weighted field values or more/less soldiers/fields
 
 Uses:
 
