@@ -26,6 +26,10 @@ class SimpleStrategy(BaseStrategy):
             self.num_fields
             number of fields to place orders in, this should be the length of the list you return.
             Or just assume its 8 for the main contest
+            
+            self.my_argument
+            You can use anything which you put in at setup (__init__ above).
+            This might be used for more complicated strategies.
         """
         #Do some calucalations, use some random numbers, do whatever you want
         strategy = [50, 0, 50, 0, 0, 0, 0, 0]
