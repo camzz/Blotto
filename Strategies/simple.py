@@ -2,12 +2,10 @@ __author__ = "Linus"
 
 from random import randint
 
-
 # This is an example for making your own strategy.
 
 # This file contains a strategy called Copier which copies a random move the opponent
 # has made in the past.
-
 
 
 def Copier(weights, soldiers):

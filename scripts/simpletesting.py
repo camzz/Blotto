@@ -1,7 +1,5 @@
 __author__ = "Linus"
 
-from simple import Copier # import your strategies here
-
 # For testing strategies written in the simple.py style.
 # quickTest returns a tuple (totalscore, numberOfWins).
 # These are the results under the two different scoring methods.
@@ -10,6 +8,7 @@ from simple import Copier # import your strategies here
 
 # If either program plays an invalid move (e.g. too many soldiers),
 # then this helpfully crashes.
+
 
 def quickTest(player1, player2, weights, soldiers, iterations):
     """Call like
@@ -31,7 +30,8 @@ def quickTest(player1, player2, weights, soldiers, iterations):
         move1, move2 = P1.send(move2), P2.send(move1)
 
     return totalscore, numberOfWins
-        
+
+
 def score(move1, move2, weights, soldiers):
     check(move1, weights, soldiers)
     check(move2, weights, soldiers)
