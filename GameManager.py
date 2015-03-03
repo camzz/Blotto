@@ -5,7 +5,15 @@ from general_utils import sign, cumulative_sum
 
 
 class GameManager(object):
-    def __init__(self, stategy_A, strategy_B, num_fields, num_runs, total_score=True):
+    """
+    This class battles two strategies, you dont need to know how it works but to set it up for testing for the main competition:
+    gm = GameManager(strategy_A, strategy_B, 8, 10000)
+    gm.run()
+    
+    use gm.plot_results() to see a nice plot *requires matplotlib
+    use gm.declare_winner() to see how you did!
+    """
+    def __init__(self, stategy_A, strategy_B, num_fields, num_runs, total_score=False):
         self.strategy_A = stategy_A
         self.strategy_B = strategy_B
 
