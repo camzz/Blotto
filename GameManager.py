@@ -1,6 +1,10 @@
 __author__ = 'camzzz'
 
-import matplotlib.pyplot as plt
+try:
+    import matplotlib.pyplot as plt
+except ImportError:
+    "no matplotlib installed"
+
 from general_utils import sign, cumulative_sum
 
 

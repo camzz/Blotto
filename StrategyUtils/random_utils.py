@@ -2,7 +2,10 @@
 __author__ = 'camzzz'
 
 import random
-import numpy as np
+try:
+    import numpy as np
+except:
+    pass
 
 
 def random_draw_allocation(weightings, number=100):
@@ -41,7 +44,6 @@ def dirichlet_allocation(weightings, number=100):
     """
     assert abs(sum(weightings) - 1.0) < 1e-6
     result = [int(r) for r in np.random.dirichlet(weightings) * number]
-    print result
 
     while sum(result) != number:
         if sum(result) > number:

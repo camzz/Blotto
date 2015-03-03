@@ -33,9 +33,10 @@ class RandomStrategy(BaseStrategy):
 
         if self.style != RandomStyle.UNIFORM:
             assert weightings is not None
-            assert abs(sum(weightings) - 1.0) < 1e-6
+            assert abs(sum(weightings) - 1.0) < 1e-6, "weightings: %s" % weightings
             self.weightings = weightings
-            self.shuffle = shuffle
+
+        self.shuffle = shuffle
 
     def soldiers_request(self, iteration):
         if self.style == RandomStyle.NUMBER:
