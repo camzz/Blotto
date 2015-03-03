@@ -17,6 +17,6 @@ class CopierStrategy(BaseStrategy):
             return get_allocation_uniform(self.num_fields)
         else:
             randomIndex = randint(0, len(self.opponent_allocations)-1)
-            myMove = opponentsMoves[randomIndex]
+            myMove = self.opponent_allocations[randomIndex]
             
             return myMove
