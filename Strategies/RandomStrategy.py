@@ -24,7 +24,7 @@ class RandomStyle(object):
 
 
 class RandomStrategy(BaseStrategy):
-    def __init__(self, name, weightings, shuffle=False, style=None):
+    def __init__(self, name, weightings=None, shuffle=False, style=None):
         super(RandomStrategy, self).__init__(name)
         if style is None:
             self.style = RandomStyle.NUMBER
@@ -32,22 +32,10 @@ class RandomStrategy(BaseStrategy):
             self.style = style
 
         if self.style != RandomStyle.UNIFORM:
-            if isinstance(weightings, dict):
-                self.weightings_map = weightings
-            else:
-                self.weightings_map = {len(weightings): weightings}
-
+            assert weightings is not None
+            assert abs(sum(weightings) - 1.0) < 1e-6
+            self.weightings = weightings
             self.shuffle = shuffle
-
-            self.weightings = None
-
-    def initialise(self, num_fields, num_runs):
-        super(RandomStrategy, self).initialise(num_fields, num_runs)
-        if self.style != RandomStyle.UNIFORM:
-            self.weightings = self.weightings_map[num_fields]
-
-            if sum(self.weightings) != 1.0:
-                raise UsageError("Weightings must add to 1: %s" % self.weightings)
 
     def soldiers_request(self, iteration):
         if self.style == RandomStyle.NUMBER:
