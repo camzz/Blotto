@@ -3,8 +3,19 @@ __author__ = "camzz"
 from BaseStrategy import BaseStrategy
 
 class SimpleStrategy(BaseStrategy):
-    """ Copy this strategy and rename it to create your own! """
+    """
+    Copy this strategy and rename it to create your own!
+    Check out CopierStrategy for an example
+    """
     def __init__(self, name, my_argument):
+        """
+        Create your strategy my writing MyStrategy(name, my_argument)
+        
+        Writing this method is entirely optional, if you dont want any extra arguments, leave it out
+        If you leave it out, create your strategy my writing MyStrategy(name)
+        
+        Choose a cool name for extra points*!
+        """
         super(SimpleStrategy, self).__init__(name)
         
         #Store any variables you need later here
