@@ -6,6 +6,11 @@ from BaseStrategy import BaseStrategy
 
 
 class StaticStrategy(BaseStrategy):
+    """
+    Strategy which always uses the same allocation of soldiers
+    Create like: StaticStrategy('my_strategy', [10, 5, 20, 15, 20, 5 ,10, 15])
+    Pas shuffle=True to randomise the order you return the values in.
+    """
     def __init__(self, name, static_soldiers, shuffle=False):
         super(StaticStrategy, self).__init__(name)
         if isinstance(static_soldiers, dict):
