@@ -14,8 +14,8 @@ People might mess around with other setups afterwards. Suggestions of weighted f
 Uses:
 
  - python2.7
- - matplotlib (sudo apt-get install python-matplotlib on linux or equivalent elsewhere)*
- - numpy (sudo apt-get install python-numpy on linux or equivalent elsewhere)*
- - progressbar (sudo pip install progressbar on linux or equivalent elsewhere)*
  
-\* you can probably get away without these. I'll try to make sure thats the case soon.
+ Optional:
+ - matplotlib (sudo apt-get install python-matplotlib on linux or equivalent elsewhere)
+ - numpy (sudo apt-get install python-numpy on linux or equivalent elsewhere)
+ - progressbar (sudo pip install progressbar on linux or equivalent elsewhere)
