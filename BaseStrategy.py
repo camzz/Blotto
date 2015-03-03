@@ -2,7 +2,11 @@ __author__ = 'camzzz'
 
 
 class BaseStrategy(object):
-    """Base class for Blotto strategies"""
+    """
+    Base class for Blotto strategies
+    
+    Just make your strategy inherit from this, copy the example and forget allll about it...
+    """
     def __init__(self, name):
         self.name = name
         self.num_fields = None
