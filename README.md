@@ -11,6 +11,8 @@ Simple examples to look at:
  - StaticStrategy
  - CopierStrategy
 
+To test your strategy out look at scripts/test_my_strat.py
+
 On the night we will start by battling 100 soldiers, across 8 fields, and 10,000 runs.
 The winner will be the one that wins the most games over all 10,000 runs, i.e. a max score of 10,000.
 People might mess around with other setups afterwards. Suggestions of weighted field values or more/less soldiers/fields
