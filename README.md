@@ -11,7 +11,7 @@ Simple examples to look at:
  - StaticStrategy
  - CopierStrategy
 
-To test your strategy out look at scripts/test_my_strat.py. Before testing your strategy, you will need to add it to Strategies/__init__.py.
+To test your strategy out look at scripts/test_my_strat.py.
 
 On the night we will start by battling 100 soldiers, across 8 fields, and 10,000 runs.
 The winner will be the one that wins the most games over all 10,000 runs, i.e. a max score of 10,000.
