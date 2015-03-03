@@ -6,7 +6,16 @@ from BaseStrategy import BaseStrategy
 
 
 class MixedStrategy(BaseStrategy):
-    def __init__(self, name, strategies, weightings, shuffle=False):
+    """
+    Allows you to mix up your completely different strategies
+    Just pass in those strategies and the probability to use each one.
+    
+    s1 = MyStrategy('s1')
+    s2 = MyStrategy('s2')
+    
+    mixed_strategy = MixedStrategy('TheMixerminator', [s1, s2], [0.6, 0.4])
+    """
+    def __init__(self, name, strategies, weightings):
         super(MixedStrategy, self).__init__(name)
         assert len(strategies) == len(weightings)
 
