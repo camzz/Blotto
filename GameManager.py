@@ -13,11 +13,12 @@ class GameManager(object):
     use gm.plot_results() to see a nice plot *requires matplotlib
     use gm.declare_winner() to see how you did!
     """
-    def __init__(self, stategy_A, strategy_B, num_fields, num_runs, total_score=False):
+    def __init__(self, stategy_A, strategy_B, weights, soldiers, num_runs, total_score=False):
         self.strategy_A = stategy_A
         self.strategy_B = strategy_B
 
-        self.num_fields = num_fields
+        self.weights = weights
+        self.soldiers = soldiers
         self.num_runs = num_runs
 
         #Use the total score over many games, or number of individual games won, regardless of score
@@ -28,9 +29,9 @@ class GameManager(object):
 
     def run(self):
         #initialise strategies
-        self.strategy_A.initialise(num_fields=self.num_fields,
+        self.strategy_A.initialise(weights=self.weights, soldiers=self.soldiers,
                                    num_runs=self.num_runs)
-        self.strategy_B.initialise(num_fields=self.num_fields,
+        self.strategy_B.initialise(weights=self.weights, soldiers=self.soldiers,
                                    num_runs=self.num_runs)
 
         for i in xrange(self.num_runs):
@@ -58,10 +59,10 @@ class GameManager(object):
     def check_solders(self, soldiers):
         check = 1
         try:
-            check *= len(soldiers) == self.num_fields
+            check *= len(soldiers) == len(self.weights)
             check *= all(int(s) == s for s in soldiers)
             check *= all(a >= 0 for a in soldiers)
-            check *= sum(soldiers) <= 100.0
+            check *= sum(soldiers) <= self.soldiers
         except (TypeError, IndexError) as _:
             check = 0
 
@@ -69,15 +70,15 @@ class GameManager(object):
 
     def resolve_battle(self, soldiers_A, soldiers_B, check_A, check_B):
         if check_A and not check_B:
-            return self.num_fields
+            return sum(self.weights) if self.total_score else 1
         if check_B and not check_A:
-            return -self.num_fields
+            return -sum(self.weights) if self.total_score else 0
         if not check_B and not check_A:
             return 0
 
         score = 0
-        for i in xrange(self.num_fields):
-            score += sign(soldiers_A[i] - soldiers_B[i])
+        for i in xrange(len(self.weights)):
+            score += sign(soldiers_A[i] - soldiers_B[i])*self.weights[i]
 
         if self.total_score:
             return score
@@ -92,7 +93,7 @@ class GameManager(object):
 
     def get_max_score(self):
         if self.total_score:
-            return self.num_runs * self.num_fields
+            return self.num_runs * sum(self.weights)
         else:
             return self.num_runs
 
