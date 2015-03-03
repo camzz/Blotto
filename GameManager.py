@@ -1,6 +1,10 @@
 __author__ = 'camzzz'
 
-import matplotlib.pyplot as plt
+try:
+    import matplotlib.pyplot as plt
+    PLOTTING = True
+except:
+    PLOTTING = False
 from general_utils import sign, cumulative_sum
 
 
@@ -86,6 +90,7 @@ class GameManager(object):
             return sign(score)
 
     def plot_results(self):
+        if not PLOTTING: return
         data = list(cumulative_sum(self.results))
         plt.plot(data)
         plt.ylabel('A - B points')
