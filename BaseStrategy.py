@@ -19,10 +19,14 @@ class BaseStrategy(object):
         return "%s:%s" % (self.__class__.__name__, self.name)
 
     def initialise(self, num_fields, num_runs):
-        """Called before the battle starts"""
+        """
+        Called before the battle starts
+        Wipes history we recorded from the last opponent
+        """
         self.num_fields = num_fields
         self.num_runs = num_runs
-        self.wipe_history()
+        self.opponent_allocations = []
+        self.past_scores = []
 
     def soldiers_request(self, iteration):
         """
@@ -40,10 +44,3 @@ class BaseStrategy(object):
         """
         self.past_scores.append(score)
         self.opponent_allocations.append(soldiers_B)
-
-    def wipe_history(self):
-        """
-        Wipe history so we can take on a new opponent with fresh memory
-        """
-        self.opponent_allocations = []
-        self.past_scores = []
