@@ -19,10 +19,9 @@ def random_number_allocation(weightings, number=100):
     result = []
     for w in weightings:
         result.append(random.random() * w)
+    result = [int(number * r / sum(result)) for r in result]
 
     while sum(result) != number:
-        result = [int(number * r / sum(result)) for r in result]
-
         if sum(result) > number:
             result[weighted_draw(weightings)] -= 1
         else:
