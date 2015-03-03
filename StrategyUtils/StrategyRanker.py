@@ -5,8 +5,9 @@ from GameManager import GameManager
 
 
 class StrategyRanker(object):
-    def __init__(self, strategies, num_fields, num_runs, total_score=True):
-        self.num_fields = num_fields
+    def __init__(self, strategies, weights, soldiers, num_runs, total_score=True):
+        self.weights = weights
+        self.soldiers = soldiers
         self.num_runs = num_runs
         self.total_score = total_score
 
