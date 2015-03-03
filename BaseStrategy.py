@@ -18,7 +18,7 @@ class BaseStrategy(object):
     def __repr__(self):
         return "%s:%s" % (self.__class__.__name__, self.name)
 
-    def initialise(self, num_fields, num_runs):
+    def initialise(self, weights, soldiers, num_runs):
         """
         Called before the battle starts
         Wipes history we recorded from the last opponent
