@@ -13,7 +13,7 @@ from simple import Copier # import your strategies here
 
 def quickTest(player1, player2, weights, soldiers, iterations):
     """Call like
-    quickTest(Copier, CleverStrat, 10, 100, 9000)"""
+    quickTest(Copier, CleverStrat, [4,3,3,2,2,2,1,1,1,1], 100, 9000)"""
     totalscore = 0 # positive for P1 winning, negative for P2 winning
     numberOfWins = 0 # +1 when P1 wins, -1 when P2 wins
 
