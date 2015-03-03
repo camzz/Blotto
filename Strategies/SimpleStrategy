@@ -1,0 +1,27 @@
+__author__ = "camzz"
+
+from BaseStrategy import BaseStrategy
+
+class SimpleStrategy(BaseStrategy):
+    def __init__(self, name, my_argument):
+        super(SimpleStrategy, self).__init__(name)
+        
+        #Store any variables you need later here
+        self.my_argument = my_argument
+
+
+    def soldiers_request(self, iteration):
+        """
+        Here you are asked what your next move will be, return it 
+        iteration is the number of which battle we are on 0->N (you probably wont need it)
+        
+        You can look at:
+            self.opponent_allocations
+            which is a list of the opponents strategies so far.Carefult not to change it!
+            
+            self.past_scores
+            which is a list of the scores so far in this match.
+        """
+        #Do some calucalations, use some random numbers, do whatever you want
+        strategy = [50, 0, 50, 0, 0, 0, 0, 0]
+        return strategy
