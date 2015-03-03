@@ -3,6 +3,7 @@ __author__ = "camzz"
 from BaseStrategy import BaseStrategy
 
 class SimpleStrategy(BaseStrategy):
+    """ Copy this strategy and rename it to create your own! """
     def __init__(self, name, my_argument):
         super(SimpleStrategy, self).__init__(name)
         
@@ -21,6 +22,10 @@ class SimpleStrategy(BaseStrategy):
             
             self.past_scores
             which is a list of the scores so far in this match.
+            
+            self.num_fields
+            number of fields to place orders in, this should be the length of the list you return.
+            Or just assume its 8 for the main contest
         """
         #Do some calucalations, use some random numbers, do whatever you want
         strategy = [50, 0, 50, 0, 0, 0, 0, 0]
