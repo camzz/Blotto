@@ -18,4 +18,4 @@ Uses:
  - numpy (sudo apt-get install python-numpy on linux or equivalent elsewhere)*
  - progressbar (sudo pip install progressbar on linux or equivalent elsewhere)*
  
-* you can probably get away without these. I'll try to make sure thats the case soon.
+\* you can probably get away without these. I'll try to make sure thats the case soon.
