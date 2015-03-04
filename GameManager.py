@@ -116,6 +116,9 @@ class GameManager(object):
             print "The game was a tie!"
         plt.show()
 
+    def get_score(self):
+        return sum(self.results)
+
     def check_strategy_A_win(self):
         if sum(self.results) > 0:
             return True
