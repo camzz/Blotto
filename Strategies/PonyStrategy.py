@@ -1,5 +1,4 @@
 from random import random, shuffle
-from blotto import randomArmy
 from itertools import permutations
 from simpleinterface import strategyOf
 
