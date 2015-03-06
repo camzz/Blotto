@@ -14,6 +14,7 @@ Simple examples to look at:
 To test your strategy out look at scripts/test_my_strat.py.**
 
 **You may need to add the repo directory to your python path, I had forgotten about this, sorry!** 
+**Update, try running from the repo directory, if that doesnt work add repo directory to python path** 
 
 On the night we will start by battling 100 soldiers, across 8 fields, and 10,000 runs.
 The winner will be the one that wins the most games over all 10,000 runs, i.e. a max score of 10,000.
