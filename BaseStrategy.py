@@ -11,6 +11,8 @@ class BaseStrategy(object):
         self.name = name
         self.num_fields = None
         self.num_runs = None
+        self.field_weights = None
+        self.num_soldiers = None
 
         self.opponent_allocations = []
         self.past_scores = []
@@ -23,8 +25,10 @@ class BaseStrategy(object):
         Called before the battle starts
         Wipes history we recorded from the last opponent
         """
-        self.num_fields = num_fields
         self.num_runs = num_runs
+        self.field_weights = weights
+        self.num_soldiers = soldiers
+        
         self.opponent_allocations = []
         self.past_scores = []
 
