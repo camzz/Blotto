@@ -1,7 +1,2 @@
 .idea
 *.pyc
-Strategies/SnoopDog.py
-Strategies/CamzStrategy.py
-data/__init__.py
-data/camz_strategy.json
-scripts/camz_learn.py
