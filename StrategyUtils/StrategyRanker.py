@@ -1,6 +1,9 @@
 __author__ = 'camzzz'
 
-import progressbar
+try:
+    import progressbar
+except:
+    pass
 from GameManager import GameManager
 
 
