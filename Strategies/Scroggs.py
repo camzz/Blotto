@@ -54,7 +54,6 @@ class Scroggs(BaseStrategy):
 
         sorted = average[:]
         sorted.sort()
-        print sorted
         put = [0]*8
         used = []
         left = 100
