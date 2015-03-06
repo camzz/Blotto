@@ -27,6 +27,7 @@ class BaseStrategy(object):
         """
         self.num_runs = num_runs
         self.field_weights = weights
+        self.num_fields = len(self.field_weights)
         self.num_soldiers = soldiers
         
         self.opponent_allocations = []
